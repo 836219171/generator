@@ -92,9 +92,9 @@ public class MysqlGenerator extends GeneratorTest {
                     }
                 })
                 .setDriverName(Driver.class.getName())
-                .setUsername("root")
-                .setPassword("1q2w3e4r")
-                .setUrl("jdbc:mysql://127.0.0.1:3306/mybatis-plus?useUnicode=true&allowPublicKeyRetrieval=true&useSSL=false&characterEncoding=utf8")
+                .setUsername("uniocean_dev")
+                .setPassword("uniocean_dev#0qxk07O83QJR")
+                .setUrl("jdbc:mysql://10.17.0.232:13306/smpc?useUnicode=true&allowPublicKeyRetrieval=true&useSSL=false&characterEncoding=utf8")
         ).setStrategy(
             // 策略配置
             new StrategyConfig()
@@ -134,7 +134,7 @@ public class MysqlGenerator extends GeneratorTest {
             // 包配置
             new PackageConfig()
                 .setModuleName("test")
-                .setParent("com.baomidou")// 自定义包路径
+                .setParent("com.gdunicom.smpc.server.node")// 自定义包路径
                 .setController("controller")// 这里是控制器包名，默认 web
         ).setCfg(
             // 注入自定义配置，可以在 VM 中使用 cfg.abc 设置的值

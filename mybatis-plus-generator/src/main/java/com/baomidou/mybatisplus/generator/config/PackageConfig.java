@@ -44,6 +44,8 @@ public class PackageConfig {
      * Entity包名
      */
     private String entity = "entity";
+
+    private String vo = "vo";
     /**
      * Service包名
      */
@@ -108,6 +110,7 @@ public class PackageConfig {
     public Map<String, String> getPackageInfo() {
         if (packageInfo.isEmpty()) {
             packageInfo.put(ConstVal.MODULE_NAME, this.getModuleName());
+            packageInfo.put(ConstVal.VO, this.joinPackage(this.getVo()));
             packageInfo.put(ConstVal.ENTITY, this.joinPackage(this.getEntity()));
             packageInfo.put(ConstVal.MAPPER, this.joinPackage(this.getMapper()));
             packageInfo.put(ConstVal.XML, this.joinPackage(this.getXml()));
@@ -253,6 +256,12 @@ public class PackageConfig {
     public String getEntity() {
         return entity;
     }
+
+    public String getVo() {
+        return vo;
+    }
+
+
 
     public String getService() {
         return service;

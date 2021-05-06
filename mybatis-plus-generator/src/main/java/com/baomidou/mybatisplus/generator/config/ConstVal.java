@@ -30,6 +30,7 @@ public interface ConstVal {
     String MODULE_NAME = "ModuleName";
 
     String ENTITY = "Entity";
+    String VO = "VO";
     String SERVICE = "Service";
     String SERVICE_IMPL = "ServiceImpl";
     String MAPPER = "Mapper";
@@ -37,6 +38,7 @@ public interface ConstVal {
     String CONTROLLER = "Controller";
 
     String ENTITY_PATH = "entity_path";
+    String VO_PATH = "vo_path";
     String SERVICE_PATH = "service_path";
     String SERVICE_IMPL_PATH = "service_impl_path";
     String MAPPER_PATH = "mapper_path";

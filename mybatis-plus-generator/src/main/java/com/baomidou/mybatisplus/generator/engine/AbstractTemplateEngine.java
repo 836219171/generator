@@ -361,6 +361,7 @@ public abstract class AbstractTemplateEngine {
             entityData.put("activeRecord", true);
         }
         objectMap.put("entity", entityData);
+        objectMap.put("vo", entityData);
         objectMap.putAll(entityData);
         objectMap.put("config", config);
         objectMap.put("package", config.getPackageConfig().getPackageInfo());

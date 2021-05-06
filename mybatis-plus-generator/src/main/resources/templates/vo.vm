@@ -158,17 +158,4 @@ public class ${entity} implements Serializable {
     }
 #end
 
-public static SmpcSampleInfoVO buildToVO(${entity} entity) {
-        if (entity == null) {
-        return new SmpcSampleInfoVO();
-        }
-        return BeanUtil.toBean(entity, SmpcSampleInfoVO.class);
-        }
-
-public static ${entity} buildFromVO(SmpcSampleInfoVO vo) {
-        if (vo == null) {
-        return new ${entity}();
-        }
-        return BeanUtil.toBean(vo, ${entity}.class);
-        }
 }
